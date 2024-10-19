@@ -1,3 +1,8 @@
+# Translation
+
+I only changed the language to German. Everything else remains the same.
+
+
 # lmgtfy
 
 Self-hosted Let Me Google That For You (LMGTFY) service.
@@ -13,3 +18,4 @@ Use the URL [`https://lmgtfy.linu.sk?q=QUERY`](https://lmgtfy.linu.sk?q=QUERY) a
 # Installation
 
 If you want to self-host this service, you just need to clone this repository and serve it using any web server (nginx, apache, caddy, `python3 -m http.server`, ...).
+

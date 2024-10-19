@@ -11,16 +11,16 @@ const finalCursorPosition = { bottom: "-35px", left: "-40px" };
 	urlInput.value = '';
 	queryInput.value = '';
 
-	// Enter google.com into the URL input field
-	document.getElementById('info').innerText = "1. Go to google.com";
+	// Enter google.de into the URL input field
+	document.getElementById('info').innerText = "1. Öffne google.de";
 	await sleep(2000);
-	await typeIntoInputField(urlInput, "https://google.com");
+	await typeIntoInputField(urlInput, "https://google.de");
 
 	// Show the Google search website
 	document.getElementById('google-search').style.opacity = 1;
 
 	// Enter the search query into the query input field
-	document.getElementById('info').innerText = "2. Enter your search query";
+	document.getElementById('info').innerText = "2. Geb deine Suchanfrage ein";
 	await sleep(2000);
 	await typeIntoInputField(queryInput, queryUrlParameter, 150);
 
@@ -32,7 +32,7 @@ const finalCursorPosition = { bottom: "-35px", left: "-40px" };
 	document.getElementById('cursor').style.left = finalCursorPosition.left;
 
 	// Redirect to Google search results page
-	document.getElementById('info').innerText = "Click 'Search'. Was it that hard?";
+	document.getElementById('info').innerText = "Klick auf 'Suche'. War es so schwer?";
 	await sleep(5000);
 	document.getElementById('search-form').submit();
 })()
